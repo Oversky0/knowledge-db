@@ -1,9 +1,9 @@
 from ftplib import FTP
 
-adress = 'ftp://192.168.0.1/' # много музыки в формате mp3
+adress = '185.54.136.70'
 userdata = () # анонимный доступ
-dirname = '.' # каталог, откуда загружаются файлы
-filename = 'music.mp3'
+dirname = '/users/yura' # каталог, откуда загружаются файлы
+filename = 'readme!.txt'
 
 connection = FTP(adress)
 connection.login(userdata)
