@@ -13,6 +13,6 @@ class AttrDisplay:
         for key in sorted(self.__dict__):
             attrs.append('{}={}'.format(key, getattr(self, key)))
         return ', '.join(attrs)
+    
     def __repr__(self):
         return '{}: {}'.format(self.__class__.__name__, self.gatherattr())
-
